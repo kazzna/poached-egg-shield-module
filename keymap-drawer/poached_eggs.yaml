@@ -1,257 +1,210 @@
 layout: {zmk_keyboard: poached_eggs}
 layers:
   Base:
-  - TAB
-  - Q
+  - {t: ∅, type: none}
+  - B
+  - L
+  - D
   - W
-  - E
+  - Z
+  - ','
+  - F
+  - O
+  - U
+  - J
+  - {t: ∅, type: none}
+  - '`'
+  - N
   - R
   - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '-'
-  - LCTRL
-  - A
   - S
-  - D
-  - F
   - G
+  - Y
   - H
-  - J
-  - K
-  - L
-  - ;
+  - A
+  - E
+  - I
   - ''''
-  - LSHFT
-  - Z
+  - LCTRL
+  - Q
   - X
+  - P
   - C
   - V
-  - B
-  - N
+  - K
   - M
-  - ','
   - .
+  - '-'
   - /
-  - RSHFT
-  - '&caps_word'
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - LGUI
+  - RCTRL
+  - System
   - LALT
-  - Lower
-  - SPACE
-  - RET
-  - Raise
+  - LGUI
+  - TAB
+  - DEL
+  - {t: SPACE, h: LSHFT}
+  - {t: RET, h: Symbols}
+  - {t: RET, h: Symbols}
+  - {t: SPACE, h: RSHFT}
   - BSPC
-  - RGUI
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: Num, h: toggle}
-  Lower:
   - ESC
+  - APP
+  - RALT
+  - System
+  Symbols:
+  - {t: ∅, type: none}
+  - '{'
+  - '}'
+  - '['
+  - ']'
+  - ^
+  - '%'
+  - '#'
+  - <
+  - '>'
+  - $
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - ;
+  - '|'
+  - '&'
+  - '0'
+  - ':'
+  - '@'
   - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - (
+  - )
+  - '='
+  - {t: ∅, type: none}
+  - LCTRL
   - '6'
   - '7'
   - '8'
   - '9'
-  - '0'
-  - '`'
-  - '`'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - '~'
-  - RET
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - '{'
-  - '}'
-  - '|'
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - DEL
-  - {t: ▽, type: trans}
-  - BT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  Raise:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
   - +
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
+  - '*'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - RCTRL
   - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT
-  - {t: ▽, type: trans}
-  - DEL
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  BT:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - '&studio_unlock'
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - O
-  - M
-  - U
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: held}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: held}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - K
-  - E
-  - N
-  Num:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - KP DIVIDE
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP MINUS
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - KP MULTIPLY
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP PLUS
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - KP EQUAL
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP DOT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RET
-  - {t: ∅, type: none}
+  - LALT
+  - LGUI
+  - TAB
   - BSPC
-  - KP 0
-  - '00'
-  - ','
-  - {t: ▽, type: trans}
+  - {t: SPACE, h: LSHFT}
+  - {t: RET, type: held}
+  - RET
+  - {t: SPACE, h: RSHFT}
+  - DEL
+  - ESC
+  - APP
+  - RALT
+  - {t: ∅, type: none}
+  Neovim:
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - B
+  - {t: ∅, type: none}
+  - E
+  - W
+  - Sft+H
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: held}
+  - {t: ∅, type: held}
+  - {t: ∅, type: none}
+  - H
+  - J
+  - K
+  - L
+  - Sft+M
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - '0'
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - $
+  - Sft+L
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - ESC
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  System:
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - '&bootloader'
+  - '&bootloader'
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: held}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+combos:
+- p: [15, 16]
+  k: Neovim
+  l: [Base]
