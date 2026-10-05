@@ -23,15 +23,38 @@
         };
     };
 
+    behaviors {
+        mm_comma: comma_exclamation {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp EXCL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_dot: dot_question {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp QMARK>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_slash: slash_backslash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp BSLH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "Base";
             bindings = <
-&none      &kp B     &kp L     &kp D      &kp W      &kp Z                                    &kp COMMA  &kp F     &kp O      &kp U      &kp J     &none
+&none      &kp B     &kp L     &kp D      &kp W      &kp Z                                    &mm_comma  &kp F     &kp O      &kp U      &kp J     &none
 &kp GRAVE  &kp N     &kp R     &kp T      &kp S      &kp G                                    &kp Y      &kp H     &kp A      &kp E      &kp I     &kp SQT
-&kp LCTRL  &kp Q     &kp X     &kp P      &kp C      &kp V                                    &kp K      &kp M     &kp DOT    &kp MINUS  &kp FSLH  &kp RCTRL
+&kp LCTRL  &kp Q     &kp X     &kp P      &kp C      &kp V                                    &kp K      &kp M     &mm_dot    &kp MINUS  &mm_slash &kp RCTRL
 &mo 3      &kp LALT  &kp LGUI  &kp TAB    &kp DEL    &mt LSHFT SPACE  &lt 1 RET  &lt 1 RET  &mt RSHFT SPACE  &kp BSPC  &kp ESC  &kp K_APP  &kp RALT  &mo 3
             >;
         };
