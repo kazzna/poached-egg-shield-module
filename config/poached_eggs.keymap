@@ -3,6 +3,17 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_neovim {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&mo 2>;
+            layers = <0>;
+        };
+    };
+
     macros {
         // "00"（KP_N0 を 2 回送る）numpad 用マクロ
         num_00: num_00 {
@@ -18,50 +29,40 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESC  &kp B     &kp L     &kp D      &kp W      &kp Z                      &kp SQT   &kp F     &kp O     &kp U      &kp J    &none
-&none    &kp N     &kp R     &kp T      &kp S      &kp G                      &kp Y     &kp H     &kp A     &kp E      &kp I    &none
-&none    &kp Q     &kp X     &kp M      &kp C      &kp V                      &kp K     &kp P     &kp DOT   &kp MINUS  &kp FSLH &none
-&mo 1    &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp SPACE  &none    &none  &kp BSPC  &kp RET   &kp DEL   &kp TAB    &none    &mo 1
+&none      &kp B     &kp L     &kp D      &kp W      &kp Z                                    &kp COMMA  &kp F     &kp O      &kp U      &kp J     &none
+&kp GRAVE  &kp N     &kp R     &kp T      &kp S      &kp G                                    &kp Y      &kp H     &kp A      &kp E      &kp I     &kp SQT
+&kp LCTRL  &kp Q     &kp X     &kp P      &kp C      &kp V                                    &kp K      &kp M     &kp DOT    &kp MINUS  &kp FSLH  &kp RCTRL
+&mo 3      &kp LALT  &kp LGUI  &kp TAB    &kp DEL    &mt LSHFT SPACE  &lt 1 RET  &lt 1 RET  &mt RSHFT SPACE  &kp BSPC  &kp ESC  &kp K_APP  &kp RALT  &mo 3
             >;
         };
 
-        lower_layer {
+        symbols_layer {
+            display-name = "Symbols";
+            bindings = <
+&none      &kp LBRC  &kp RBRC  &kp LBKT   &kp RBKT   &kp CARET                                &kp PRCNT  &kp HASH  &kp LT     &kp GT     &kp DLLR  &none
+&none      &kp SEMI  &kp PIPE  &kp AMPS   &kp N0     &kp COLON                                &kp AT     &kp N1    &kp LPAR   &kp RPAR   &kp EQUAL &none
+&kp LCTRL  &kp N6    &kp N7    &kp N8     &kp N9     &kp PLUS                                 &kp ASTRK  &kp N2    &kp N3     &kp N4     &kp N5    &kp RCTRL
+&none      &kp LALT  &kp LGUI  &kp TAB    &kp BSPC   &mt LSHFT SPACE  &kp RET    &kp RET    &mt RSHFT SPACE  &kp DEL   &kp ESC  &kp K_APP  &kp RALT  &none
+            >;
+        };
+
+        neovim_layer {
+            display-name = "Neovim";
+            bindings = <
+&none  &none  &none  &none  &none  &none                                                  &kp B   &none   &kp E   &kp W      &kp LS(H)  &none
+&none  &none  &none  &none  &none  &none                                                  &kp H   &kp J   &kp K   &kp L      &kp LS(M)  &none
+&none  &none  &none  &none  &none  &none                                                  &kp N0  &none   &none   &kp DLLR   &kp LS(L)  &none
+&none  &none  &none  &none  &none  &none  &none                                    &none  &none   &none   &kp ESC &none      &none      &none
+            >;
+        };
+
+        system_layer {
             display-name = "System";
             bindings = <
-&none  &none  &none  &none  &none  &none                   &none        &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                   &none        &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &bootloader             &bootloader  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none        &none &none &none       &none  &none  &none  &none  &none
-            >;
-        };
-
-        raise_layer {
-            display-name = "Raise";
-            bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                   &kp F7    &kp F8     &kp F9     &kp F10   &kp F11    &kp F12
-&none   &none   &none   &none   &none   &none                    &none     &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &none
-&none   &none   &none   &none   &none   &none                    &kp PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-&none   &none   &none   &trans  &trans  &mo 3   &trans  &kp DEL  &trans    &trans     &trans     &none     &none      &none
-            >;
-        };
-
-        bt_layer {
-            display-name = "BT";
-            bindings = <
-&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                &none  &none  &none  &none  &none  &none
-&studio_unlock  &none         &none         &none         &none         &none                       &none  &none  &none  &none  &none  &none
-&none           &none         &none         &none         &none         &none                       &none  &none  &none  &none  &none  &none
-&kp O           &kp M         &kp U         &none         &none         &none         &none  &none  &none  &none  &none  &kp K  &kp E  &kp N
-            >;
-        };
-
-        num_layer {
-            display-name = "Num";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                       &kp KP_DIVIDE    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &kp KP_EQUAL     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RET  &none  &kp BSPC  &kp KP_N0  &num_00  &kp COMMA  &trans
+&none  &none  &none  &none  &none  &none                                                  &none        &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                                  &none        &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &bootloader                              &bootloader  &none        &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none        &none                       &none       &none        &none  &none  &none  &none  &none
             >;
         };
     };
