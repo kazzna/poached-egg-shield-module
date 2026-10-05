@@ -160,11 +160,11 @@ layers:
   - {t: ∅, type: none}
   - {t: ∅, type: none}
   - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
-  - {t: ∅, type: none}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - {t: ∅, type: none}
   - {t: ∅, type: none}
   - {t: ∅, type: none}
@@ -197,7 +197,7 @@ layers:
   - {t: ∅, type: none}
   - {t: ∅, type: none}
   - {t: ∅, type: none}
-  - {t: ∅, type: none}
+  - BT CLR
   - {t: ∅, type: none}
   - {t: ∅, type: none}
   - {t: ∅, type: none}
