@@ -23,6 +23,29 @@
         };
     };
 
+    behaviors {
+        mm_comma: mm_comma {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp EXCL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_dot: mm_dot {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp QMARK>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_slash: mm_slash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp BSLH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -49,9 +72,9 @@
         graphite_layer {
             display-name = "Graphite";
             bindings = <
-&none      &kp B      &kp L      &kp D      &kp W           &kp Z                                                                &kp COMMA  &kp F           &kp O      &kp U      &kp J      &none
+&none      &kp B      &kp L      &kp D      &kp W           &kp Z                                                                &mm_comma  &kp F           &kp O      &kp U      &kp J      &none
 &kp GRAVE  &kp N      &kp R      &kp T      &kp S           &kp G                                                                &kp Y      &kp H           &kp A      &kp E      &kp I      &kp SQT
-&kp LGUI   &kp Q      &kp X      &kp P      &kp C           &kp V                                                                &kp K      &kp M           &kp DOT    &kp MINUS  &kp FSLH   &kp RGUI
+&kp LGUI   &kp Q      &kp X      &kp P      &kp C           &kp V                                                                &kp K      &kp M           &mm_dot    &kp MINUS  &mm_slash  &kp RGUI
 &kp LALT   &kp LCTRL  &kp TAB    &kp DEL    &mt LSHFT SPACE &lt 3 RET  &mo 6          &mo 6          &lt 3 RET  &mt RSHFT SPACE  &kp BSPC   &kp ESC         &kp RCTRL  &kp RALT
             >;
         };
