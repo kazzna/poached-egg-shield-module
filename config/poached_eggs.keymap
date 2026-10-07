@@ -44,6 +44,76 @@
             bindings = <&kp FSLH>, <&kp BSLH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        mm_n1: mm_n1 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N1>, <&kp N1>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_n2: mm_n2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N2>, <&kp N2>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_n3: mm_n3 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N3>, <&kp N3>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_n4: mm_n4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N4>, <&kp N4>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_n5: mm_n5 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N5>, <&kp N5>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_n6: mm_n6 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N6>, <&kp N6>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_n7: mm_n7 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N7>, <&kp N7>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_n8: mm_n8 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N8>, <&kp N8>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_n9: mm_n9 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N9>, <&kp N9>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_n0: mm_n0 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp N0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -62,7 +132,7 @@
         symbols_layer {
             display-name = "Symbols";
             bindings = <
-&kp TAB    &kp N1    &kp N2     &kp N3     &kp N4     &kp N5                                   &kp N6     &kp N7    &kp N8     &kp N9     &kp N0     &kp BSPC
+&kp TAB    &mm_n1    &mm_n2     &mm_n3     &mm_n4     &mm_n5                                   &mm_n6     &mm_n7    &mm_n8     &mm_n9     &mm_n0     &kp BSPC
 &kp ESC    &kp EXCL  &kp AT     &kp HASH   &kp DLLR   &kp PRCNT                                &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR   &kp PIPE
 &kp CAPS   &kp PLUS  &kp MINUS  &kp BSLH   &kp SQT    &kp DQT                                  &kp LBRC   &kp RBRC  &kp UNDER  &kp EQUAL  &kp UP     &kp RET
 &mo 1      &kp LBKT  &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &mo 6      &mo 6      &kp SPACE  &kp RGUI  &kp RBKT   &kp LEFT   &kp DOWN   &kp RIGHT
@@ -83,8 +153,8 @@
             display-name = "Graphite-Symbols";
             bindings = <
 &kp LANG1  &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT        &kp CARET                                                            &kp PRCNT  &kp HASH        &kp LT     &kp GT     &kp DLLR   &kp LANG2
-&none      &kp SEMI   &kp PIPE   &kp AMPS   &kp N0          &kp COLON                                                            &kp AT     &kp N1          &kp LPAR   &kp RPAR   &kp EQUAL  &none
-&kp LGUI   &kp N6     &kp N7     &kp N8     &kp N9          &kp PLUS                                                             &kp ASTRK  &kp N2          &kp N3     &kp N4     &kp N5     &kp RGUI
+&none      &kp SEMI   &kp PIPE   &kp AMPS   &mm_n0          &kp COLON                                                            &kp AT     &mm_n1          &kp LPAR   &kp RPAR   &kp EQUAL  &none
+&kp LGUI   &mm_n6     &mm_n7     &mm_n8     &mm_n9          &kp PLUS                                                             &kp ASTRK  &mm_n2          &mm_n3     &mm_n4     &mm_n5     &kp RGUI
 &kp LALT   &kp LCTRL  &kp TAB    &kp BSPC   &mt LSHFT SPACE &kp RET    &mo 6          &mo 6          &kp RET    &mt RSHFT SPACE  &kp DEL    &kp ESC         &kp RCTRL  &kp RALT
             >;
         };
