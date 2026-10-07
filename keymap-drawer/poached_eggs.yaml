@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: poached_eggs}
 layers:
-  Base: [TAB, Q, W, R, D, B, F, J, U, P, ;, BSPC, ESC, A, S, H, T, G, Y, N, E, O, I, '''', LSHFT, Z, X, C, M, V, L, K, ',', ., UP, RET, System, Symbols, '`', LCTRL,
-    LALT, LGUI, SPACE, SPACE, RGUI, /, RSHFT, LEFT, DOWN, RIGHT]
+  Clandor: [TAB, Q, W, R, D, B, F, J, U, P, ;, BSPC, ESC, A, S, H, T, G, Y, N, E, O, I, /, LSHFT, Z, X, C, M, V, L, K, ',', ., UP, RET, Symbols, '`', LCTRL, LALT,
+    LGUI, SPACE, Round-About, Round-About, SPACE, RGUI, RSHFT, LEFT, DOWN, RIGHT]
   Symbols:
   - TAB
   - '1'
@@ -27,29 +27,29 @@ layers:
   - (
   - )
   - '|'
-  - {t: ∅, type: none}
+  - CAPS
   - +
   - '-'
   - \
-  - '['
-  - ']'
+  - ''''
+  - '"'
   - '{'
   - '}'
   - _
   - '='
   - UP
   - RET
-  - System
-  - {t: ∅, type: held}
-  - CAPS
+  - {t: Symbols, type: held}
+  - '['
   - LCTRL
   - LALT
   - LGUI
   - SPACE
+  - Round-About
+  - Round-About
   - SPACE
   - RGUI
-  - F11
-  - F12
+  - ']'
   - LEFT
   - DOWN
   - RIGHT
@@ -141,7 +141,22 @@ layers:
   - {t: ∅, type: none}
   - {t: ∅, type: none}
   - {t: ∅, type: none}
-  - {t: ∅, type: held}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - Round-About
+  - Round-About
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  Round-About:
+  - {t: Clandor, h: toggle}
   - {t: ∅, type: none}
   - {t: ∅, type: none}
   - {t: ∅, type: none}
@@ -149,6 +164,42 @@ layers:
   - {t: ∅, type: none}
   - {t: ∅, type: none}
   - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: Clandor, h: toggle}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: System, h: toggle}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: System, h: toggle}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - {t: Round-About, type: held}
+  - Round-About
   - {t: ∅, type: none}
   - {t: ∅, type: none}
   - {t: ∅, type: none}
@@ -158,4 +209,4 @@ layers:
 combos:
 - p: [15, 16]
   k: Neovim
-  l: [Base]
+  l: [Clandor]
