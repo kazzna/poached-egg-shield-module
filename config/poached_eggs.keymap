@@ -46,23 +46,23 @@
             >;
         };
 
-        reserved_layer_2 {
-            display-name = "Reserved 2";
+        graphite_layer {
+            display-name = "Graphite";
             bindings = <
-&none  &none  &none  &none  &none  &none                                                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none                                    &none  &none  &none  &none  &none  &none  &none
+&none      &kp B      &kp L      &kp D      &kp W           &kp Z                                                                &kp COMMA  &kp F           &kp O      &kp U      &kp J      &none
+&kp GRAVE  &kp N      &kp R      &kp T      &kp S           &kp G                                                                &kp Y      &kp H           &kp A      &kp E      &kp I      &kp SQT
+&kp LGUI   &kp Q      &kp X      &kp P      &kp C           &kp V                                                                &kp K      &kp M           &kp DOT    &kp MINUS  &kp FSLH   &kp RGUI
+&kp LALT   &kp LCTRL  &kp TAB    &kp DEL    &mt LSHFT SPACE &lt 3 RET  &mo 6          &mo 6          &lt 3 RET  &mt RSHFT SPACE  &kp BSPC   &kp ESC         &kp RCTRL  &kp RALT
             >;
         };
 
-        reserved_layer_3 {
-            display-name = "Reserved 3";
+        graphite_symbols_layer {
+            display-name = "Graphite-Symbols";
             bindings = <
-&none  &none  &none  &none  &none  &none                                                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none                                    &none  &none  &none  &none  &none  &none  &none
+&kp LANG1  &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT        &kp CARET                                                            &kp PRCNT  &kp HASH        &kp LT     &kp GT     &kp DLLR   &kp LANG2
+&none      &kp SEMI   &kp PIPE   &kp AMPS   &kp N0          &kp COLON                                                            &kp AT     &kp N1          &kp LPAR   &kp RPAR   &kp EQUAL  &none
+&kp LGUI   &kp N6     &kp N7     &kp N8     &kp N9          &kp PLUS                                                             &kp ASTRK  &kp N2          &kp N3     &kp N4     &kp N5     &kp RGUI
+&kp LALT   &kp LCTRL  &kp TAB    &kp BSPC   &mt LSHFT SPACE &kp RET    &mo 6          &mo 6          &kp RET    &mt RSHFT SPACE  &kp DEL    &kp ESC         &kp RCTRL  &kp RALT
             >;
         };
 
