@@ -89,7 +89,7 @@
         roundabout_layer {
             display-name = "Round-About";
             bindings = <
-&to 0  &none  &none  &none  &none  &none                                                  &none         &none         &none         &none         &none         &to 0
+&none  &none  &none  &none  &to 2  &to 0                                                  &to 0         &to 2         &none         &none         &none         &none
 &none  &none  &none  &none  &none  &none                                                  &none         &none         &none         &none         &none         &none
 &to 5  &none  &none  &none  &none  &none                                                  &none         &none         &none         &none         &none         &to 5
 &none  &none  &none  &none  &none  &none        &mo 6        &mo 6          &none        &none         &none         &none         &none         &none
