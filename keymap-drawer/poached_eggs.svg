@@ -586,6 +586,7 @@ text.trans { fill: #3f72c4; opacity: 0.95; }
 <g transform="translate(510, 30)" class="key keypos-6">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 <text x="0" y="0" class="key tap">,</text>
+<text x="0" y="-26" class="key shifted">!</text>
 </g>
 <g transform="translate(570, 30)" class="key keypos-7">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -690,6 +691,7 @@ text.trans { fill: #3f72c4; opacity: 0.95; }
 <g transform="translate(630, 150)" class="key keypos-32">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 <text x="0" y="0" class="key tap">.</text>
+<text x="0" y="-26" class="key shifted">?</text>
 </g>
 <g transform="translate(690, 150)" class="key keypos-33">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -698,6 +700,7 @@ text.trans { fill: #3f72c4; opacity: 0.95; }
 <g transform="translate(750, 150)" class="key keypos-34">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 <text x="0" y="0" class="key tap">/</text>
+<text x="0" y="-26" class="key shifted">\</text>
 </g>
 <g transform="translate(810, 150)" class="key keypos-35">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>

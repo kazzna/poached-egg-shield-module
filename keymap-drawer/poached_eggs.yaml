@@ -60,7 +60,7 @@ layers:
   - D
   - W
   - Z
-  - ','
+  - {t: ',', s: '!'}
   - F
   - O
   - U
@@ -86,9 +86,9 @@ layers:
   - V
   - K
   - M
-  - .
+  - {t: ., s: '?'}
   - '-'
-  - /
+  - {t: /, s: \}
   - RGUI
   - LALT
   - LCTRL
