@@ -9,7 +9,7 @@
         combo_neovim {
             timeout-ms = <50>;
             key-positions = <15 16>;
-            bindings = <&mo 2>;
+            bindings = <&mo 4>;
             layers = <0>;
         };
     };
@@ -32,7 +32,7 @@
 &kp TAB    &kp Q     &kp W      &kp R      &kp D      &kp B                                    &kp F      &kp J     &kp U      &kp P      &kp SEMI   &kp BSPC
 &kp ESC    &kp A     &kp S      &kp H      &kp T      &kp G                                    &kp Y      &kp N     &kp E      &kp O      &kp I      &kp FSLH
 &kp LSHFT  &kp Z     &kp X      &kp C      &kp M      &kp V                                    &kp L      &kp K     &kp COMMA  &kp DOT    &kp UP     &kp RET
-&mo 1      &kp GRAVE &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &mo 4      &mo 4      &kp SPACE  &kp RGUI  &kp RSHFT  &kp LEFT   &kp DOWN   &kp RIGHT
+&mo 1      &kp GRAVE &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &mo 6      &mo 6      &kp SPACE  &kp RGUI  &kp RSHFT  &kp LEFT   &kp DOWN   &kp RIGHT
             >;
         };
 
@@ -42,7 +42,27 @@
 &kp TAB    &kp N1    &kp N2     &kp N3     &kp N4     &kp N5                                   &kp N6     &kp N7    &kp N8     &kp N9     &kp N0     &kp BSPC
 &kp ESC    &kp EXCL  &kp AT     &kp HASH   &kp DLLR   &kp PRCNT                                &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR   &kp PIPE
 &kp CAPS   &kp PLUS  &kp MINUS  &kp BSLH   &kp SQT    &kp DQT                                  &kp LBRC   &kp RBRC  &kp UNDER  &kp EQUAL  &kp UP     &kp RET
-&mo 1      &kp LBKT  &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &mo 4      &mo 4      &kp SPACE  &kp RGUI  &kp RBKT   &kp LEFT   &kp DOWN   &kp RIGHT
+&mo 1      &kp LBKT  &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &mo 6      &mo 6      &kp SPACE  &kp RGUI  &kp RBKT   &kp LEFT   &kp DOWN   &kp RIGHT
+            >;
+        };
+
+        reserved_layer_2 {
+            display-name = "Reserved 2";
+            bindings = <
+&none  &none  &none  &none  &none  &none                                                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                                    &none  &none  &none  &none  &none  &none  &none
+            >;
+        };
+
+        reserved_layer_3 {
+            display-name = "Reserved 3";
+            bindings = <
+&none  &none  &none  &none  &none  &none                                                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                                    &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
@@ -62,7 +82,7 @@
 &none  &none  &none  &none  &none  &none                                                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &none  &none  &none  &none  &none  &none                                                  &none         &none         &none         &none         &none         &none
 &none  &none  &none  &none  &none  &bootloader                              &bootloader  &none         &none         &none         &none         &none
-&none  &none  &none  &none  &none  &none        &mo 4        &mo 4          &none        &none         &none         &none         &none         &none
+&none  &none  &none  &none  &none  &none        &mo 6        &mo 6          &none        &none         &none         &none         &none         &none
             >;
         };
 
@@ -71,8 +91,8 @@
             bindings = <
 &to 0  &none  &none  &none  &none  &none                                                  &none         &none         &none         &none         &none         &to 0
 &none  &none  &none  &none  &none  &none                                                  &none         &none         &none         &none         &none         &none
-&to 3  &none  &none  &none  &none  &none                                                  &none         &none         &none         &none         &none         &to 3
-&none  &none  &none  &none  &none  &none        &mo 4        &mo 4          &none        &none         &none         &none         &none         &none
+&to 5  &none  &none  &none  &none  &none                                                  &none         &none         &none         &none         &none         &to 5
+&none  &none  &none  &none  &none  &none        &mo 6        &mo 6          &none        &none         &none         &none         &none         &none
             >;
         };
     };
