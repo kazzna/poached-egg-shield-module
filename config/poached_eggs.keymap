@@ -114,6 +114,55 @@
             bindings = <&kp N0>, <&kp N0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        mm_minus: mm_minus {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp MINUS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_equal: mm_equal {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp EQUAL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_lbkt: mm_lbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp LBKT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_rbkt: mm_rbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT>, <&kp RBKT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_bslh: mm_bslh {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH>, <&kp BSLH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_semi: mm_semi {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SEMI>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_sqt: mm_sqt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp SQT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -134,8 +183,8 @@
             bindings = <
 &kp TAB    &mm_n1    &mm_n2     &mm_n3     &mm_n4     &mm_n5                                   &mm_n6     &mm_n7    &mm_n8     &mm_n9     &mm_n0     &kp BSPC
 &kp ESC    &kp EXCL  &kp AT     &kp HASH   &kp DLLR   &kp PRCNT                                &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR   &kp PIPE
-&kp CAPS   &kp PLUS  &kp MINUS  &kp BSLH   &kp SQT    &kp DQT                                  &kp LBRC   &kp RBRC  &kp UNDER  &kp EQUAL  &kp UP     &kp RET
-&mo 1      &kp LBKT  &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &mo 6      &mo 6      &kp SPACE  &kp RGUI  &kp RBKT   &kp LEFT   &kp DOWN   &kp RIGHT
+&kp CAPS   &kp PLUS  &mm_minus  &mm_bslh   &mm_sqt    &kp DQT                                  &kp LBRC   &kp RBRC  &kp UNDER  &mm_equal  &kp UP     &kp RET
+&mo 1      &mm_lbkt  &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &mo 6      &mo 6      &kp SPACE  &kp RGUI  &mm_rbkt   &kp LEFT   &kp DOWN   &kp RIGHT
             >;
         };
 
@@ -152,8 +201,8 @@
         graphite_symbols_layer {
             display-name = "Graphite-Symbols";
             bindings = <
-&kp LANG1  &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT        &kp CARET                                                            &kp PRCNT  &kp HASH        &kp LT     &kp GT     &kp DLLR   &kp LANG2
-&none      &kp SEMI   &kp PIPE   &kp AMPS   &mm_n0          &kp COLON                                                            &kp AT     &mm_n1          &kp LPAR   &kp RPAR   &kp EQUAL  &none
+&kp LANG1  &kp LBRC   &kp RBRC   &mm_lbkt   &mm_rbkt        &kp CARET                                                            &kp PRCNT  &kp HASH        &kp LT     &kp GT     &kp DLLR   &kp LANG2
+&none      &mm_semi   &kp PIPE   &kp AMPS   &mm_n0          &kp COLON                                                            &kp AT     &mm_n1          &kp LPAR   &kp RPAR   &mm_equal  &none
 &kp LGUI   &mm_n6     &mm_n7     &mm_n8     &mm_n9          &kp PLUS                                                             &kp ASTRK  &mm_n2          &mm_n3     &mm_n4     &mm_n5     &kp RGUI
 &kp LALT   &kp LCTRL  &kp TAB    &kp BSPC   &mt LSHFT SPACE &kp RET    &mo 6          &mo 6          &kp RET    &mt RSHFT SPACE  &kp DEL    &kp ESC         &kp RCTRL  &kp RALT
             >;
