@@ -788,6 +788,11 @@ text.trans { fill: #3f72c4; opacity: 0.95; }
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 <text x="0" y="0" class="key tap">RALT</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="226" y="77" width="28" height="26" class="combo"/>
+<a href="#Neovim">
+<text x="240" y="90" class="combo tap layer-activator">Neovim</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 888)" class="layer-Graphite-Symbols">

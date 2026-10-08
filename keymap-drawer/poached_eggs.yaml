@@ -311,4 +311,4 @@ layers:
 combos:
 - p: [15, 16]
   k: Neovim
-  l: [Clandor]
+  l: [Clandor, Graphite]
