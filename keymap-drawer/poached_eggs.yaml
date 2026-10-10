@@ -53,6 +53,8 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
+  Plover: [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, LSHFT, ',', SPACE, Y, Z, '0', '1', '2', '3', RET, ., RSHFT, LCTRL, LALT, LGUI,
+    '4', '5', '6', Round-About, Round-About, '7', '8', '9', RGUI, RALT, RCTRL]
   Graphite:
   - {t: ∅, type: none}
   - B
@@ -261,12 +263,12 @@ layers:
   - {t: ∅, type: none}
   - {t: ∅, type: none}
   - {t: ∅, type: none}
-  - {t: ∅, type: none}
   - {t: Graphite, h: toggle}
+  - {t: Plover, h: toggle}
   - {t: Clandor, h: toggle}
   - {t: Clandor, h: toggle}
+  - {t: Plover, h: toggle}
   - {t: Graphite, h: toggle}
-  - {t: ∅, type: none}
   - {t: ∅, type: none}
   - {t: ∅, type: none}
   - {t: ∅, type: none}
