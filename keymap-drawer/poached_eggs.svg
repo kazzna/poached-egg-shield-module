@@ -1477,7 +1477,7 @@ text.trans { fill: #3f72c4; opacity: 0.95; }
 </g>
 <g transform="translate(510, 30)" class="key keypos-6">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">CLEAR</text>
+<text x="0" y="0" class="key tap">INS</text>
 </g>
 <g transform="translate(570, 30)" class="key keypos-7">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -1591,9 +1591,9 @@ text.trans { fill: #3f72c4; opacity: 0.95; }
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key none"/>
 <text x="0" y="0" class="key none tap">∅</text>
 </g>
-<g transform="translate(750, 150)" class="key keypos-34">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">INS</text>
+<g transform="translate(750, 150)" class="key none keypos-34">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key none"/>
+<text x="0" y="0" class="key none tap">∅</text>
 </g>
 <g transform="translate(810, 150)" class="key keypos-35">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>

@@ -215,7 +215,7 @@ layers:
   - F3
   - F4
   - F5
-  - CLEAR
+  - INS
   - HOME
   - UP
   - END
@@ -243,7 +243,7 @@ layers:
   - {t: ∅, type: none}
   - RSHFT
   - {t: ∅, type: none}
-  - INS
+  - {t: ∅, type: none}
   - RGUI
   - LALT
   - LCTRL
