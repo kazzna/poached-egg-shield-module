@@ -245,9 +245,9 @@
         navigation_layer {
             display-name = "Navigation";
             bindings = <
-&none     &kp F1    &kp F2   &kp F3   &kp F4          &kp F5                                                      &kp CLEAR  &kp HOME        &kp UP    &kp END   &kp PG_UP  &none
+&none     &kp F1    &kp F2   &kp F3   &kp F4          &kp F5                                                      &kp INS    &kp HOME        &kp UP    &kp END   &kp PG_UP  &none
 &none     &kp F6    &kp F7   &kp F8   &kp F9          &kp F10                                                     &kp CAPS   &kp LEFT        &kp DOWN  &kp RIGHT &kp PG_DN  &none
-&kp LGUI  &kp F11   &none    &kp LSHFT &none          &kp F12                                                     &none      &none           &kp RSHFT &none     &kp INS    &kp RGUI
+&kp LGUI  &kp F11   &none    &kp LSHFT &none          &kp F12                                                     &none      &none           &kp RSHFT &none     &none      &kp RGUI
 &kp LALT  &kp LCTRL &kp TAB  &kp DEL  &mt LSHFT SPACE &kp RET  &mo 8          &mo 8          &kp RET  &mt RSHFT SPACE &kp BSPC   &kp ESC         &kp RCTRL &kp RALT
             >;
         };
