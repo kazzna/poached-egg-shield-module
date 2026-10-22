@@ -12,6 +12,20 @@
             bindings = <&mo 5>;
             layers = <0 3>;
         };
+
+        combo_nav_left {
+            timeout-ms = <50>;
+            key-positions = <26 27 28>;
+            bindings = <&mo 6>;
+            layers = <3>;
+        };
+
+        combo_nav_right {
+            timeout-ms = <50>;
+            key-positions = <31 32 33>;
+            bindings = <&mo 6>;
+            layers = <3>;
+        };
     };
 
     macros {
@@ -174,7 +188,7 @@
 &kp TAB    &kp Q     &kp W      &kp R      &kp D      &kp B                                    &kp F      &kp J     &kp U      &kp P      &kp SEMI   &kp BSPC
 &kp ESC    &kp A     &kp S      &kp H      &kp T      &kp G                                    &kp Y      &kp N     &kp E      &kp O      &kp I      &kp FSLH
 &kp LSHFT  &kp Z     &kp X      &kp C      &kp M      &kp V                                    &kp L      &kp K     &kp COMMA  &kp DOT    &kp UP     &kp RET
-&mo 1      &kp GRAVE &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &mo 7      &mo 7      &kp SPACE  &kp RGUI  &kp RSHFT  &kp LEFT   &kp DOWN   &kp RIGHT
+&mo 1      &kp GRAVE &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &mo 8      &mo 8      &kp SPACE  &kp RGUI  &kp RSHFT  &kp LEFT   &kp DOWN   &kp RIGHT
             >;
         };
 
@@ -184,7 +198,7 @@
 &kp TAB    &mm_n1    &mm_n2     &mm_n3     &mm_n4     &mm_n5                                   &mm_n6     &mm_n7    &mm_n8     &mm_n9     &mm_n0     &kp BSPC
 &kp ESC    &kp EXCL  &kp AT     &kp HASH   &kp DLLR   &kp PRCNT                                &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR   &kp PIPE
 &kp CAPS   &kp PLUS  &mm_minus  &mm_bslh   &mm_sqt    &kp DQT                                  &kp LBRC   &kp RBRC  &kp UNDER  &mm_equal  &kp UP     &kp RET
-&mo 1      &mm_lbkt  &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &mo 7      &mo 7      &kp SPACE  &kp RGUI  &mm_rbkt   &kp LEFT   &kp DOWN   &kp RIGHT
+&mo 1      &mm_lbkt  &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &mo 8      &mo 8      &kp SPACE  &kp RGUI  &mm_rbkt   &kp LEFT   &kp DOWN   &kp RIGHT
             >;
         };
 
@@ -194,7 +208,7 @@
 &kp A      &kp B      &kp C      &kp D      &kp E      &kp F                                    &kp G      &kp H      &kp I      &kp J      &kp K      &kp L
 &kp M      &kp N      &kp O      &kp P      &kp Q      &kp R                                    &kp S      &kp T      &kp U      &kp V      &kp W      &kp X
 &kp LSHFT  &kp COMMA  &kp SPACE  &kp Y      &kp Z      &kp N0                                   &kp N1     &kp N2     &kp N3     &kp RET    &kp DOT    &kp RSHFT
-&kp LCTRL  &kp LALT   &kp LGUI   &kp N4     &kp N5     &kp N6     &mo 7      &mo 7      &kp N7     &kp N8     &kp N9     &kp RGUI   &kp RALT   &kp RCTRL
+&kp LCTRL  &kp LALT   &kp LGUI   &kp N4     &kp N5     &kp N6     &mo 8      &mo 8      &kp N7     &kp N8     &kp N9     &kp RGUI   &kp RALT   &kp RCTRL
             >;
         };
 
@@ -204,7 +218,7 @@
 &none      &kp B      &kp L      &kp D      &kp W           &kp Z                                                                &mm_comma  &kp F           &kp O      &kp U      &kp J      &none
 &kp GRAVE  &kp N      &kp R      &kp T      &kp S           &kp G                                                                &kp Y      &kp H           &kp A      &kp E      &kp I      &kp SQT
 &kp LGUI   &kp Q      &kp X      &kp P      &kp C           &kp V                                                                &kp K      &kp M           &mm_dot    &kp MINUS  &mm_slash  &kp RGUI
-&kp LALT   &kp LCTRL  &kp TAB    &kp DEL    &mt LSHFT SPACE &lt 4 RET  &mo 7          &mo 7          &lt 4 RET  &mt RSHFT SPACE  &kp BSPC   &kp ESC         &kp RCTRL  &kp RALT
+&kp LALT   &kp LCTRL  &kp TAB    &kp DEL    &mt LSHFT SPACE &lt 4 RET  &mo 8          &mo 8          &lt 4 RET  &mt RSHFT SPACE  &kp BSPC   &kp ESC         &kp RCTRL  &kp RALT
             >;
         };
 
@@ -214,7 +228,7 @@
 &kp LANG1  &kp LBRC   &kp RBRC   &mm_lbkt   &mm_rbkt        &kp CARET                                                            &kp PRCNT  &kp HASH        &kp LT     &kp GT     &kp DLLR   &kp LANG2
 &none      &mm_semi   &kp PIPE   &kp AMPS   &mm_n0          &kp COLON                                                            &kp AT     &mm_n1          &kp LPAR   &kp RPAR   &mm_equal  &none
 &kp LGUI   &mm_n6     &mm_n7     &mm_n8     &mm_n9          &kp PLUS                                                             &kp ASTRK  &mm_n2          &mm_n3     &mm_n4     &mm_n5     &kp RGUI
-&kp LALT   &kp LCTRL  &kp TAB    &kp BSPC   &mt LSHFT SPACE &kp RET    &mo 7          &mo 7          &kp RET    &mt RSHFT SPACE  &kp DEL    &kp ESC         &kp RCTRL  &kp RALT
+&kp LALT   &kp LCTRL  &kp TAB    &kp BSPC   &mt LSHFT SPACE &kp RET    &mo 8          &mo 8          &kp RET    &mt RSHFT SPACE  &kp DEL    &kp ESC         &kp RCTRL  &kp RALT
             >;
         };
 
@@ -228,13 +242,23 @@
             >;
         };
 
+        navigation_layer {
+            display-name = "Navigation";
+            bindings = <
+&none     &kp F1    &kp F2   &kp F3   &kp F4          &kp F5                                                      &kp CLEAR  &kp HOME        &kp UP    &kp END   &kp PG_UP  &none
+&none     &kp F6    &kp F7   &kp F8   &kp F9          &kp F10                                                     &kp CAPS   &kp LEFT        &kp DOWN  &kp RIGHT &kp PG_DN  &none
+&kp LGUI  &kp F11   &none    &kp LSHFT &none          &kp F12                                                     &none      &none           &kp RSHFT &none     &kp INS    &kp RGUI
+&kp LALT  &kp LCTRL &kp TAB  &kp DEL  &mt LSHFT SPACE &kp RET  &mo 8          &mo 8          &kp RET  &mt RSHFT SPACE &kp BSPC   &kp ESC         &kp RCTRL &kp RALT
+            >;
+        };
+
         system_layer {
             display-name = "System";
             bindings = <
 &none  &none  &none  &none  &none  &none                                                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &none  &none  &none  &none  &none  &none                                                  &none         &none         &none         &none         &none         &none
 &none  &none  &none  &none  &none  &bootloader                              &bootloader  &none         &none         &none         &none         &none
-&none  &none  &none  &none  &none  &none        &mo 7        &mo 7          &none        &none         &none         &none         &none         &none
+&none  &none  &none  &none  &none  &none        &mo 8        &mo 8          &none        &none         &none         &none         &none         &none
             >;
         };
 
@@ -243,8 +267,8 @@
             bindings = <
 &none  &none  &none  &to 3  &to 2  &to 0                                                  &to 0         &to 2         &to 3         &none         &none         &none
 &none  &none  &none  &none  &none  &none                                                  &none         &none         &none         &none         &none         &none
-&to 6  &none  &none  &none  &none  &none                                                  &none         &none         &none         &none         &none         &to 6
-&none  &none  &none  &none  &none  &none        &mo 7        &mo 7          &none        &none         &none         &none         &none         &none
+&to 7  &none  &none  &none  &none  &none                                                  &none         &none         &none         &none         &none         &to 7
+&none  &none  &none  &none  &none  &none        &mo 8        &mo 8          &none        &none         &none         &none         &none         &none
             >;
         };
     };
