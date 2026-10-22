@@ -208,6 +208,57 @@ layers:
   - {t: ∅, type: none}
   - {t: ∅, type: none}
   - {t: ∅, type: none}
+  Navigation:
+  - {t: ∅, type: none}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - CLEAR
+  - HOME
+  - UP
+  - END
+  - PG UP
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - CAPS
+  - LEFT
+  - DOWN
+  - RIGHT
+  - PG DN
+  - {t: ∅, type: none}
+  - LGUI
+  - F11
+  - {t: ∅, type: held}
+  - {t: LSHFT, type: held}
+  - {t: ∅, type: held}
+  - F12
+  - {t: ∅, type: none}
+  - {t: ∅, type: none}
+  - RSHFT
+  - {t: ∅, type: none}
+  - INS
+  - RGUI
+  - LALT
+  - LCTRL
+  - TAB
+  - DEL
+  - {t: SPACE, h: LSHFT}
+  - RET
+  - Round-About
+  - Round-About
+  - RET
+  - {t: SPACE, h: RSHFT}
+  - BSPC
+  - ESC
+  - RCTRL
+  - RALT
   System:
   - {t: ∅, type: none}
   - {t: ∅, type: none}
@@ -314,3 +365,9 @@ combos:
 - p: [15, 16]
   k: Neovim
   l: [Clandor, Graphite]
+- p: [26, 27, 28]
+  k: Navigation
+  l: [Graphite]
+- p: [31, 32, 33]
+  k: Navigation
+  l: [Graphite]
